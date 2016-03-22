@@ -1,0 +1,44 @@
+<html>
+<head>
+    <title>Backup and restore local storage buttons</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="Cache-control" content="public">
+    <link rel="stylesheet" type="text/css" href="main.css"/>
+    <script type="text/javascript" src="functions.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+    <div id="container">
+        <h1 id="header">Backup and restore local storage buttons</h1>
+
+        <h3>Usage</h3>
+        <p>
+          Drag the following buttons and place them in your bookmarks or bookmarks panel. Then open site you want to backup / restore and click on this bookmarked button.
+        </p>
+
+        <h3>Backup</h3>
+        <p>
+          Takes all key-value pairs from your local storage and serves them to download as a JSON file.
+        </p>
+        <a class="btn" href="#" data-function="localStorageBackup">Backup local storage!</a>
+
+        <h3>Restore</h3>
+        <p>
+          Creates overlay in current page with one file selector. Select file with backups. All items will be automatically restored.
+        </p>
+        <a class="btn" data-function="localStorageRestore" href="#">Restore local storage!</a>
+
+        <h3>Clear</h3>
+        <p>
+          Removes all items from local storage.
+        </p>
+        <a class="btn" data-function="localStorageClear" href="#">Clear local storage!</a>
+
+        <div id="footer">
+            <p>Created by <a href="http://www.tomas-dvorak.cz">Tomáš Dvořák</a>. Found a bug or enhancement? <a href="https://github.com/todvora/">Pull requests</a> welcome.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
